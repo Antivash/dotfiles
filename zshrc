@@ -95,7 +95,7 @@ zinit light zsh-users/zsh-completions
 
 # Set Powerlevel10k Theme
 setopt promptsubst
-zinit ice depth=1; light romkatv/powerlevel10k
+zinit light romkatv/powerlevel10k
 
 # Custom Keybinds
 source $HOME/.config/zsh/keybinds.zshrc
