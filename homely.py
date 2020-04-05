@@ -29,10 +29,12 @@ symlink('plugin-settings.vim', '~/.config/nvim/configs/')
 symlink('plugins.vim', '~/.config/nvim/configs/')
 symlink('plugins.zshrc', '~/.config/zsh/')
 symlink('powerlevel10k.zshrc', '~/.config/zsh/')
-symlink('ruby.zshrc', '~/.config/zsh/')
+symlink('ruby.zshsrc', '~/.config/zsh/')
 symlink('themes.zshrc', '~/.config/zsh/')
 symlink('zshrc', '~/.zshrc')
 symlink('gitconfig', '~/.gitconfig')
+# Setting Kitty Terminal Color Scheme
+symlink('kitty-themes/themes/Monokai_Soda.conf', '~/.config/kitty/theme.conf')
 
 # Install Stuff
 #from homely.install import installpkg
