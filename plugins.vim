@@ -51,7 +51,7 @@ Plug 'Yggdroot/indentLine'
  Plug 'neoclide/coc.nvim', {'branch': 'release'}
 
 "{{ Smart completion (to work with CoC)
-Plug 'zxqfl/tabnine-vim'
+"Plug 'zxqfl/tabnine-vim'
 
 "{{ Custom start page
 Plug 'mhinz/vim-startify'
@@ -107,6 +107,10 @@ Plug 'RRethy/vim-hexokinase'
 "{{ vim-bufferline
 Plug 'bling/vim-bufferline'
 
+"{{ Vim Which Key
+Plug 'liuchengxu/vim-which-key'
+
+
 "{ Themes
 
 "{{ CSApprox
@@ -156,5 +160,18 @@ Plug 'rafi/awesome-vim-colorschemes'
 
 "{{ Badwolf
 Plug 'sjl/badwolf'
+
+"{{ Space-vim-dark
+Plug 'liuchengxu/space-vim-dark'
+
+"{{ Apprentice
+Plug 'romainl/Apprentice'
+
+"{{ Pencil
+Plug 'reedes/vim-colors-pencil'
+
+"{{ Srcery
+Plug 'srcery-colors/srcery-vim'
+
 "{ End of Plugins File
 call plug#end()

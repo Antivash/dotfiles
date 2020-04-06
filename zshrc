@@ -78,7 +78,7 @@ zinit load zdharma/history-search-multi-word
 # Some OH-MY-ZSH plugins
 zinit snippet OMZ::plugins/command-not-found/command-not-found.plugin.zsh
 zinit snippet OMZ::plugins/extract/extract.plugin.zsh
-zinit snippet OMZ::plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
+#zinit snippet OMZ::plugins/zsh-interactive-cd/zsh-interactive-cd.plugin.zsh
 
 # Make Dir and CD Into it
 zinit light caarlos0/zsh-mkc
@@ -88,6 +88,9 @@ zinit light caarlos0/zsh-mkc
 zinit light ytet5uy4/fzf-widgets
 # Bookmarks
 zinit light urbainvaes/fzf-marks
+
+# EnhanCD
+zinit light b4b4r07/enhancd
 
 # Tab completions
 zinit ice wait lucid blockf atpull'zinit creinstall -q .'
