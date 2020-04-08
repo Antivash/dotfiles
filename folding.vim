@@ -14,4 +14,14 @@ function! VimFolds(lnum)
             return '='
         endif
     endif
+
+    if l:cur_line =~# '^#{'
+        return '>' . (matchend(l:cur_line, '"{*') - 1)
+    else
+        if l:cur_line ==# '' && (matchend(l:next_line, '"{*') - 1) == 1
+            return 0
+        else
+            return '='
+        endif
+    endif
 endfunction

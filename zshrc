@@ -90,7 +90,7 @@ zinit light ytet5uy4/fzf-widgets
 zinit light urbainvaes/fzf-marks
 
 # EnhanCD
-zinit light b4b4r07/enhancd
+#zinit light b4b4r07/enhancd
 
 # Tab completions
 zinit ice wait lucid blockf atpull'zinit creinstall -q .'

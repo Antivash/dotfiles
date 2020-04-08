@@ -131,6 +131,10 @@ augroup numbertoggle
 augroup END
 
 
+"{ Automatically save and load folding
+au BufWinLeave * mkview
+au BufWinEnter * silent loadview
+
 "{ Subscript digraphs for maths
 "{alphsubs ---------------------- {{{
         execute "digraphs ks " . 0x2096

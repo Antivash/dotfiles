@@ -1,7 +1,7 @@
 # Basic Settings
 set preview true
-#set previewer ~/.config/lf/preview
-set previewer pistol
+set previewer ~/.config/lf/preview
+#set previewer pistol
 #set previewer ~/.config/lf/pv.sh
 set hidden true
 set color256 true

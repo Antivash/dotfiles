@@ -7,6 +7,7 @@ export PATH="/home/linuxbrew/.linuxbrew/opt/python/bin:$PATH"
 export PATH="/home/linuxbrew/go/bin:$PATH"
 export PATH="/home/linuxbrew/.linuxbrew/bin:$PATH"
 export PATH="/home/antivash/go/bin:$PATH"
+export PATH="/home/antivash/.cargo/bin:$PATH"
 export DISPLAY=:0
 #export LIBGL_ALWAYS_INDIRECT=1
 
