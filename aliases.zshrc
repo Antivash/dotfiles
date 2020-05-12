@@ -8,7 +8,7 @@
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 
 #{ Replace dir with K because I will forget this plugin if I dont
-alias dir="lsd -la"
+alias dir="lsd -lAh --group-dirs first"
 
 #{ Replace commands with other commands
 alias vim="nvim"

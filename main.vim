@@ -132,8 +132,8 @@ augroup END
 
 
 "{ Automatically save and load folding
-au BufWinLeave * mkview
-au BufWinEnter * silent loadview
+#au BufWinLeave * mkview
+#au BufWinEnter * silent loadview
 
 "{ Subscript digraphs for maths
 "{alphsubs ---------------------- {{{

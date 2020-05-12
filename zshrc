@@ -109,3 +109,5 @@ source $HOME/.config/zsh/aliases.zshrc
 
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
+
+source /home/antivash/.config/broot/launcher/bash/br
