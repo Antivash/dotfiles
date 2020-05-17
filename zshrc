@@ -1,3 +1,13 @@
+#                   ███████████  █████████  █████   █████
+#                  ░█░░░░░░███  ███░░░░░███░░███   ░░███ 
+#                  ░     ███░  ░███    ░░░  ░███    ░███ 
+#                       ███    ░░█████████  ░███████████ 
+#                      ███      ░░░░░░░░███ ░███░░░░░███ 
+#                    ████     █ ███    ░███ ░███    ░███ 
+#                   ███████████░░█████████  █████   █████
+#                  ░░░░░░░░░░░  ░░░░░░░░░  ░░░░░   ░░░░░ 
+
+cd ~
 # Enable Powerlevel10k instant prompt. Should stay close to the top of ~/.zshrc.
 # Initialization code that may require console input (password prompts, [y/n]
 # confirmations, etc.) must go above this block; everything else may go below.
@@ -15,14 +25,8 @@ TRAPWINCH() {
   zle && { zle reset-prompt; zle -R }
 }
 
-# Fix LS/CD Colors
-#source $HOME/.config/zsh/fix-colors.zshrc
-
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
-
-# Add RVM to PATH for scripting. Make sure this is the last PATH variable change.
-source $HOME/.config/zsh/ruby.zshrc
 
 ### Added by Zinit's installer
 if [[ ! -f $HOME/.zinit/bin/zinit.zsh ]]; then
@@ -58,8 +62,16 @@ setopt AUTO_PUSHD         # Make cd push each old directory onto the stack
 setopt CDABLE_VARS        # Like AUTO_CD, but for named directories
 setopt PUSHD_IGNORE_DUPS  # Don't push duplicates onto the stack
 
+# Change LS colors
+LS_COLORS="ow=01;36;40" && export LS_COLORS
+
+# Make CD use the LS colors
+zstyle ':completion:*' list-colors "${(@s.:.)LS_COLORS}"
+
 # Function for batch moving and renaming of files
 autoload -Uz zmv
+autoload -Uz compinit
+compinit
 
 # Load OMZ Git library
 zinit snippet OMZ::lib/git.zsh
@@ -102,12 +114,10 @@ zinit light romkatv/powerlevel10k
 
 # Custom Keybinds
 source $HOME/.config/zsh/keybinds.zshrc
-# Node Version Management
-source $HOME/.config/zsh/nvm.zshrc
 # Aliases: Shortcuts to various commands
 source $HOME/.config/zsh/aliases.zshrc
 
 # Completion for kitty
 kitty + complete setup zsh | source /dev/stdin
 
-source /home/antivash/.config/broot/launcher/bash/br
+#source /home/antivash/.config/broot/launcher/bash/br

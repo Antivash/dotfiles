@@ -1,3 +1,13 @@
+"   ██████   █████                                ███                 
+"  ░░██████ ░░███                                ░░░                  
+"   ░███░███ ░███   ██████   ██████  █████ █████ ████  █████████████  
+"   ░███░░███░███  ███░░███ ███░░███░░███ ░░███ ░░███ ░░███░░███░░███ 
+"   ░███ ░░██████ ░███████ ░███ ░███ ░███  ░███  ░███  ░███ ░███ ░███ 
+"   ░███  ░░█████ ░███░░░  ░███ ░███ ░░███ ███   ░███  ░███ ░███ ░███ 
+"   █████  ░░█████░░██████ ░░██████   ░░█████    █████ █████░███ █████
+"  ░░░░░    ░░░░░  ░░░░░░   ░░░░░░     ░░░░░    ░░░░░ ░░░░░ ░░░ ░░░░░ 
+
+
 " This script contains  a list of Vim-Plugged plugins 
 source $HOME/.config/nvim/configs/plugins.vim
 " This script contains general neovim settings 
@@ -5,7 +15,6 @@ source $HOME/.config/nvim/configs/main.vim
 
 " These scripts congain folding settings
 source $HOME/.config/nvim/configs/folding.vim
-source $HOME/.config/nvim/configs/foldtext.vim
 
 " This script contains plugin specific settings
 source $HOME/.config/nvim/configs/plugin-settings.vim

@@ -1,3 +1,23 @@
+#   ███████████  █████████  █████   █████                                
+#  ░█░░░░░░███  ███░░░░░███░░███   ░░███                                 
+#  ░     ███░  ░███    ░░░  ░███    ░███                                 
+#       ███    ░░█████████  ░███████████                                 
+#      ███      ░░░░░░░░███ ░███░░░░░███                                 
+#    ████     █ ███    ░███ ░███    ░███                                 
+#   ███████████░░█████████  █████   █████                                
+#  ░░░░░░░░░░░  ░░░░░░░░░  ░░░░░   ░░░░░                                 
+#              █████████   ████   ███                                    
+#             ███░░░░░███ ░░███  ░░░                                     
+#            ░███    ░███  ░███  ████   ██████    █████   ██████   █████ 
+#            ░███████████  ░███ ░░███  ░░░░░███  ███░░   ███░░███ ███░░  
+#            ░███░░░░░███  ░███  ░███   ███████ ░░█████ ░███████ ░░█████ 
+#            ░███    ░███  ░███  ░███  ███░░███  ░░░░███░███░░░   ░░░░███
+#            █████   █████ █████ █████░░████████ ██████ ░░██████  ██████ 
+#           ░░░░░   ░░░░░ ░░░░░ ░░░░░  ░░░░░░░░ ░░░░░░   ░░░░░░  ░░░░░░  
+#                                                                        
+#                                                                        
+#                                                                        
+
 # Set personal aliases, overriding those provided by oh-my-zsh libs,
 # plugins, and themes. Aliases can be placed here, though oh-my-zsh
 # users are encouraged to define aliases within the ZSH_CUSTOM folder.
@@ -16,6 +36,9 @@ alias python="python3"
 alias pip="pip3"
 alias calc="quich"
 alias imgur='_imgur() {gallery-dl -d $PWD https://imgur.com/a/"$1" ;}; _imgur'
+alias start-alacritty="nohup alacritty &"
+alias start-kitty="nohup kitty &"
+alias show_colors='_show_colors() {for i in {0..255}; do print -Pn "%K{$i}  %k%F{$i}${(l:3::0:)i}%f " ${${(M)$((i%6)):#3}:+$'\n'}; done }; _show_colors'
 
 #{ Apt Package Manager Commands
 alias aar="sudo apt autoremove"
