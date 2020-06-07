@@ -8,6 +8,7 @@ mkdir -p ~/.config/kitty
 mkdir -p ~/.config/gtk-3.0
 mkdir -p ~/.config/termite
 mkdir -p ~/.config/lf
+mkdir -p ~/.config/spotifyd
 
 # os.symlink the dots 
 ln -s /home/git/dotfiles/aliases.zshrc ~/.config/zsh
@@ -35,3 +36,6 @@ ln -s /home/git/dotfiles/gtk.css ~/.config/gtk-3.0
 ln -s /home/git/dotfiles/themes/kitty/Monokai_Soda.conf ~/.config/kitty/theme.conf
 # Change Powerlevel10k Theme
 ln -s /home/git/dotfiles/themes/p10k/soda.zsh /home/antivash/.p10k.zsh
+#Spotifyd
+ln -s /home/git/dotfiles/spotifyd.conf ~/.config/spotifyd
+ln -s /home/git/dotfiles/songnotification ~/.config/spotifyd

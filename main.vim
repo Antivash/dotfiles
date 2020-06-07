@@ -20,11 +20,11 @@
 
 "{ Colorscheme
 set termguicolors
-let $NVIM_TUI_ENABLE_TRUE_COLOR=1
+"let $NVIM_TUI_ENABLE_TRUE_COLOR=1
 colorscheme monokai-soda
 " let g:gruvbox_transparent_bg=1
 
-"{
+"{ Specify filetypes
 augroup specify_filetype
     autocmd!
     autocmd BufRead,BufNewFile *.md set filetype=markdown
@@ -34,8 +34,27 @@ augroup END
 "{ Longer leader key timeout
 set timeout timeoutlen=1500
 
+"{ Ignore Case and Enable Smartcase
+set ignorecase
+set smartcase
+
+"{ Set up cross line highlight
+"set cursorline
+"set cursorcolumn
+"highlight CursorLine ctermbg=Red cterm=bold guibg=#2b2b2b
+"highlight CursorColumn ctermbg=Red cterm=bold guibg=#2b2b2b
+
+"{ Autocompletion for commands using Wild Mode
+set wildmode=longest,list,full
+
+"{ Fixing Splits
+set splitbelow splitright
+
+"{ Center screen vertically when entering Insert Mode
+autocmd InsertEnter * norm zz
+
 "{ Enable spell-checking for certain files
-autocmd FileType text,markdown setlocal spell
+autocmd FileType text,markdown setlocal spell spelllang=en_us
 
 "{ Limit line length for text files
 autocmd FileType text,markdown,tex setlocal textwidth=180
