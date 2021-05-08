@@ -170,7 +170,7 @@ Plug 'stillwwater/vim-nebula'
 Plug 'eemed/sitruuna.vim'
 
 "{{ Monokai Soda Theme
-Plug 'jzelinskie/monokai-soda.vim'
+Plug 'RobertYan/monokai-soda'
 
 "{{ Warlock Theme
 Plug 'hardselius/warlock'
