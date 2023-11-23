@@ -84,9 +84,9 @@ services:
     ## Storage Folders: use "/" not "\" as separator, "~" is a shortcut for C:/user/{username}, "." for the current directory
     volumes:
       # "C:/user/username/folder:/photoprism/folder"       # example
-      - "G:/AIArt/TXT2IMG/Output:/photoprism/originals/txt2img"                 # TXT2IMG Folder
-      - "G:/AIArt/IMG2IMG/Output:/photoprism/originals/img2img"                 # IMG2IMG Folder
-      - "G:/AIArt/[-- Manual Saves --]:/photoprism/originals/manual"                 # Manual Saves
+      - "G:\\AIArt\\TXT2IMG\\Output:/photoprism/originals/txt2img"                 # TXT2IMG Folder
+      - "G:\\AIArt\\IMG2IMG\\Output:/photoprism/originals/img2img"                 # IMG2IMG Folder
+      - "G:\\AIArt\\[-- Manual Saves --]:/photoprism/originals/manual"                 # Manual Saves
       # - "D:/example/family:/photoprism/originals/family" # *additional* media folders can be mounted like this
       # - "E:/:/photoprism/import"                         # *optional* base folder from which files can be imported to originals
       - "./storage:/photoprism/storage"                    # *writable* storage folder for cache, database, and sidecar files (never remove)
